@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #e5eff5;
+  font-family: "Karla", sans-serif;
+  font-size: 1.8rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  max-width: 140rem;
+  width: 57%;
+  margin: 10rem auto;
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.container .summary {
+  grid-column: 1/-1;
+  padding: 3rem 3.7rem;
+  height: 23rem;
+  background: #fff;
+  line-height: 1.4;
+}
+.container .summary h1 {
+  color: #2ab2af;
+  letter-spacing: -0.2rem;
+  margin-bottom: 1.3rem;
+}
+.container .summary .guarantee {
+  color: #c0df34;
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+.container .summary .main_pg {
+  color: #98a6bd;
+  font-size: 1.55rem;
+  margin-top: 0.8rem;
+}
+.container .subscription {
+  padding: 3rem 3.7rem;
+  height: 100%;
+  background: #2ab2af;
+}
+.container .subscription h2 {
+  color: #fff;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.container .subscription .cost {
+  color: #e5eff5;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.container .subscription .cost .amt {
+  font-size: 3.5rem;
+  margin-right: 1.1rem;
+}
+.container .subscription .per {
+  opacity: 0.6;
+  position: absolute;
+  top: 20%;
+}
+.container .subscription .description {
+  color: #fff;
+  font-size: 1.55rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+.container .subscription .btn {
+  background: #c0df34;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 27rem;
+  padding: 1.8rem 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 1.7rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.container .why {
+  background: #2ab2af;
+  opacity: 0.8;
+  padding: 3rem 3.7rem;
+  height: 100%;
+}
+.container .why h2 {
+  color: #fff;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.container .why ul li {
+  list-style: none;
+  color: #e5eff5;
+  font-size: 1.55rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 23.5em) {
+  html {
+    font-size: 52%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 37.5rem;
+    width: 85%;
+  }
+  .container .summary {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
